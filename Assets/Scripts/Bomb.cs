@@ -67,7 +67,9 @@ public class Bomb : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!blade) return;
+        Blade _blade = collision.gameObject.GetComponent<Blade>();
+
+        if (!_blade) return;
 
         FindObjectOfType<FNGameManager>().OnBombHit();
 

@@ -1,18 +1,22 @@
 ﻿<Properties StartupConfiguration="{1C78CC9A-A99E-A599-FF40-BEB413A3F171}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Fruit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Blade.cs">
     <Files>
       <File FileName="Assets/Scripts/Fruit.cs" Line="27" Column="64" />
-      <File FileName="Assets/Scripts/Spawner.cs" Line="85" Column="47" />
-      <File FileName="Assets/Scripts/Blade.cs" />
-      <File FileName="Assets/Scripts/Bomb.cs" Line="76" Column="29" />
-      <File FileName="Assets/Scripts/ButtonClickHandler.cs" Line="7" Column="2" />
-      <File FileName="Assets/Scripts/FNGameManager.cs" Line="60" Column="56" />
+      <File FileName="Assets/Scripts/Spawner.cs" />
+      <File FileName="Assets/Scripts/Blade.cs" Line="12" Column="21" />
+      <File FileName="Assets/Scripts/Bomb.cs" />
+      <File FileName="Assets/Scripts/ButtonClickHandler.cs" />
+      <File FileName="Assets/Scripts/FNGameManager.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Fruit Ninja Clone" expanded="True">
-            <Node name="Assets" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Fruit.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

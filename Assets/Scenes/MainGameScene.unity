@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad286e9289bc945529fc80f6b1871926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thresholdVel: 0.01
 --- !u!50 &161283244
 Rigidbody2D:
   serializedVersion: 4
@@ -697,6 +698,7 @@ MonoBehaviour:
   fruitsToSpawn:
   - {fileID: 7571251326463719397, guid: edd9135bf67af47cb861ec49553ae1be, type: 3}
   - {fileID: 7762442319619023258, guid: e3807d1b7f1de48e7a48c470e20d8884, type: 3}
+  - {fileID: 2991534773521365037, guid: e6216b8969a8f4ed5b35b8718d380625, type: 3}
   spawnLocations:
   - {fileID: 1203580505}
   - {fileID: 966068954}

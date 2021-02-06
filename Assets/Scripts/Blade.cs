@@ -5,11 +5,20 @@ using UnityEngine;
 public class Blade : MonoBehaviour
 {
     private Rigidbody2D rb2D;
+    private Collider2D c2D;
+    private Vector2 lastPos;
     private float CameraOffsetZ;
+
+    [SerializeField]
+    private float thresholdVel;
+    
 
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        c2D = GetComponent<Collider2D>();
+
+        lastPos = rb2D.position;
 
         // Accounts for distance between the camera and the objects plane
         CameraOffsetZ = -1 * Camera.main.transform.position.z;
@@ -18,6 +27,7 @@ public class Blade : MonoBehaviour
     void Update()
     {
         SetBladeToMouse();
+        c2D.enabled = IsMouseMoving();
     }
 
     private void SetBladeToMouse()
@@ -26,5 +36,13 @@ public class Blade : MonoBehaviour
         mousePos.z = CameraOffsetZ;
 
         rb2D.position = Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    private bool IsMouseMoving()
+    {
+        float vel = (rb2D.position - lastPos).magnitude / Time.deltaTime;
+        lastPos = rb2D.position;
+
+        return vel >= thresholdVel;
     }
 }
