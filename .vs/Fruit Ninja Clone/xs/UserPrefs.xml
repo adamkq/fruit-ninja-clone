@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Assets/Scripts/Fruit.cs" Line="27" Column="64" />
       <File FileName="Assets/Scripts/Spawner.cs" />
-      <File FileName="Assets/Scripts/Blade.cs" Line="12" Column="21" />
+      <File FileName="Assets/Scripts/Blade.cs" Line="13" Column="32" />
       <File FileName="Assets/Scripts/Bomb.cs" />
       <File FileName="Assets/Scripts/ButtonClickHandler.cs" />
       <File FileName="Assets/Scripts/FNGameManager.cs" />
@@ -11,11 +11,9 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Fruit Ninja Clone" expanded="True">
+          <Node name="Fruit Ninja Clone" expanded="True" selected="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Fruit.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
